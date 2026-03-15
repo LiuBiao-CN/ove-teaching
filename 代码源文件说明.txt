@@ -1,1 +1,9 @@
-代码开发环境：MATLAB R2016a
+代码开发环境为MATLAB R2016a
+
+注：在通过GUIDE将光学虚拟实验教学演示平台设计完成后，最终所得到的是.m源程序和.fig图形文件并非是Windows可执行文件，必须依赖于MATLAB软件才能执行。为了提高演示平台使用的便利性，需将演示平台的.m文件转换成.exe可执行文件，从而实现在没有安装Matlab环境的计算机上也能运行光学虚拟实验教学演示平台。文件格式转化步骤如下，
+第一，检查MATLAB是否配置了Runtime编译环境，没有就需要先进行安装配置。
+第二，在Matlab命令框中输入deploytool，然后回车即可进入Complier对话框。
+第三，在Complier对话框中选择Application Complier进入Matlab Complier对话框。
+第四，在Matlab Complier界面中填写相关内容、选择将Runtime打包并附上包装完成后的M文件，就可以点击Package进行打包。
+第五，打包完成后会显示3个文件夹分别为for_redistribution、for_testing、for_redistribution_files_only，而用户可执行文件保存在for_redistribution_files_only文件夹下。
+第六，在没有安装Matlab的计算机系统中，用户需要点击for_redistribution文件下的“MCRInstaller.exe”文件进行环境安装和配置、运行环境配置好后就可以独立于Matlab编译器运行生成的演示平台的.exe可执行文件。
